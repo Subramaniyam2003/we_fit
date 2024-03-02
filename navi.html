@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="navi.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="full">
+        <div class="hea">
+        <div class="heading">
+            <h1>We Fit</h1>
+        </div>
+        <div class="button">
+            <h1 onclick="op()" id="change">=</h1>
+            <h1 onclick="cl()"id="change1" style="display: none;">x</h1>
+        </div></div>
+        <div class="subhead" id="myH1">
+            <a href="index.html">Home</a>
+            <a href="tracker.html">Our Progress</a>
+            <a href="services.html">Our Services</a>
+        </div>
+    </nav>
+    <script>
+        function op(){
+        document.getElementById("change").style.display='none';
+        document.getElementById("change1").style.display='block';
+        document.getElementById("myH1").style.display = "block";
+        }
+        function cl(){
+        document.getElementById("change1").style.display='none';
+        document.getElementById("change").style.display='block';
+        document.getElementById("myH1").style.display = "none";
+        }
+    </script>
+</body>
+</html>
